@@ -56,7 +56,7 @@ export default function Technology({
           </motion.div>
         </div>
       </div>
-      <div className="lg:order-1 min-h-[200px] sm:min-h-[285px] md:min-h-[310px] lg-min-h-[460px]">
+      <div className="lg:order-1 min-h-[200px] sm:min-h-[285px] md:min-h-[310px] lg:min-h-[460px]">
         <AnimatePresence mode="wait">
           <motion.div
             key={`image-${name}`}
