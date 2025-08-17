@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-dark-blue: #0b0d17;
+  --color-primary-light-blue: #d0d6f9;
+
+  --font-barlow-condensed: "Barlow Condensed", sans-serif;
+  --font-bellefair: "Bellefair", serif;
+  --font-barlow: "Barlow", sans-serif;
+}
+body {
+  background: black;
+}
