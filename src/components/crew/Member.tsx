@@ -19,10 +19,10 @@ export default function Member({
   changeCurrentMember,
 }: MemberProps) {
   return (
-    <div className="min-h-[980px] lg:min-h-auto flex flex-col lg:flex-row gap-14 lg:gap-20 2xl:gap-45">
+    <div className="min-h-[1020px] lg:min-h-auto flex flex-col lg:flex-row gap-14 lg:gap-20 2xl:gap-45">
       <div
         aria-live="polite"
-        className="min-h-[380px] md:min-h-[320px] lg:min-h-auto mx-auto flex flex-col justify-between lg:mx-0 text-center lg:text-left "
+        className="min-h-[380px] md:min-h-[350px] lg:min-h-auto mx-auto flex flex-col justify-between lg:mx-0 text-center lg:text-left "
       >
         <div className=""></div>
         <motion.div
@@ -37,11 +37,10 @@ export default function Member({
           <h1 className="text-3xl md:text-5xl lg:text-6xl md:pt-5 pb-5 font-bellefair">
             {name?.toUpperCase()}
           </h1>
-          <p className=" text-primary-light-blue leading-loose md:max-w-[400px] 2xl:max-w-max">
+          <p className=" text-primary-light-blue leading-loose md:max-w-[400px] block md:mx-auto lg:mx-0 2xl:max-w-max">
             {bio}
           </p>
         </motion.div>
-
         <div className="text-xl pt-16 md:pt-14 lg:pt-0 gap-5 lg:gap-10 flex justify-center lg:justify-start font-barlow-condensed tracking-wide">
           {memberNames.map((member) => (
             <NextMemberBtn
@@ -53,7 +52,7 @@ export default function Member({
           ))}
         </div>
       </div>
-      <div>
+      <div className="lg:min-w-[250px] lg:min-h-[600px] xl:min-w-[600px] xl:min-h-[600px]">
         <AnimatePresence mode="wait">
           <motion.div
             key={`image-${name}`}

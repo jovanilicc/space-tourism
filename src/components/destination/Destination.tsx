@@ -25,7 +25,7 @@ export default function Destination({
       aria-live="polite"
       className="flex flex-col lg:flex-row gap-20 2xl:gap-50 min-h-[800px] lg:min-h-auto"
     >
-      <div className="">
+      <div className="lg:min-w-[445px] min-h-[220px] md:min-h-[300px] lg:min-h-auto">
         <AnimatePresence mode="wait">
           <motion.div
             key={`image-${name}`}
